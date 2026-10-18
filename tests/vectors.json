@@ -1,0 +1,1062 @@
+[
+ {
+  "name": "selection-3-of-5",
+  "kind": "selection",
+  "k": 3,
+  "n": 5,
+  "names": [
+   "Ada",
+   "Grace",
+   "Alan",
+   "Edsger",
+   "Barbara"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1000,
+  "drawRound": 1250,
+  "raw": "010000000003e8000004e200000003000000050341646105477261636504416c616e064564736765720742617262617261",
+  "code": "L1-Y2QAAuYXDAwsj0AMIGZldkxJZHUvSkxOZXHMScxjc00pTk8tYndKLEpKLEoEANS6gC8",
+  "codeLength": 70,
+  "deflated": 46,
+  "draws": {
+   "beacon-a": {
+    "randomness": "da96ba3e0f3d408432c80319c9cfa1a08834c8a96297feff65e86b9df1dee822",
+    "vector": [
+     1,
+     3,
+     2
+    ],
+    "hash": "84647904b09ac7a5358b204ed0e2445c0dc187474701a0d5f027767c3e10c32a"
+   },
+   "beacon-b": {
+    "randomness": "d50dfebcab092069ce30f23efb782564cc5f2aab4e03806eee6697c54ac28d0c",
+    "vector": [
+     2,
+     4,
+     1
+    ],
+    "hash": "12b6e5f2dfe71c8c0d43315a4cf7643f22c4dd44cfbc6766259e068e7c240d9e"
+   }
+  }
+ },
+ {
+  "name": "selection-single",
+  "kind": "selection",
+  "k": 1,
+  "n": 1,
+  "names": [
+   "Only One"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1001,
+  "drawRound": 1251,
+  "raw": "010000000003e9000004e30000000100000001084f6e6c79204f6e65",
+  "code": "L1-Y2QAAuaXDAwsj4EMRhDm8M_LqVTwz0sFANGtYlo",
+  "codeLength": 42,
+  "deflated": 25,
+  "draws": {
+   "beacon-a": {
+    "randomness": "506e5a3ee590cf3764f0255c8e690d82a1d7a34a1df37d86a2fe089901ccec70",
+    "vector": [
+     0
+    ],
+    "hash": "2c83c4f507607b791c66f3894d45c7335b08000e8dd48d45a371e63f4d99558a"
+   },
+   "beacon-b": {
+    "randomness": "52c727a7dd21c7a0ccd5b4c081e40b2772f643e116429771b66f81b94138f0fe",
+    "vector": [
+     0
+    ],
+    "hash": "2c83c4f507607b791c66f3894d45c7335b08000e8dd48d45a371e63f4d99558a"
+   }
+  }
+ },
+ {
+  "name": "selection-everybody",
+  "kind": "selection",
+  "k": 5,
+  "n": 5,
+  "names": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1002,
+  "drawRound": 1252,
+  "raw": "010000000003ea000004e4000000050000000501410142014301440145",
+  "code": "L1-Y2QAAuZXDAwsT4AMVhBmdGR0YnRmdGF0BQAYDCSo",
+  "codeLength": 43,
+  "deflated": 26,
+  "draws": {
+   "beacon-a": {
+    "randomness": "5aa73c93eaac9980f6354215b465122fc6423fea3526f0a7c928aefd118ded85",
+    "vector": [
+     3,
+     0,
+     2,
+     1,
+     4
+    ],
+    "hash": "b2b8eb65acbb18fe6abe1a50e7da6f3d35830b146cb8bd7f3a7526f87046042a"
+   },
+   "beacon-b": {
+    "randomness": "f47b0c28e446df542e813893fe1cdbf1ee1fe851d02ffe75aad84464e1c11abb",
+    "vector": [
+     1,
+     4,
+     0,
+     3,
+     2
+    ],
+    "hash": "edffb9910dc1f60e2652cbf7929e68f1c6a27fcaf9e908ad83c394ff499fc1c4"
+   }
+  }
+ },
+ {
+  "name": "selection-replacement",
+  "kind": "selection",
+  "k": 11,
+  "n": 4,
+  "names": [
+   "a",
+   "b",
+   "c",
+   "d"
+  ],
+  "weights": [
+   3,
+   1,
+   4,
+   1
+  ],
+  "replacement": true,
+  "createdRound": 1003,
+  "drawRound": 1253,
+  "raw": "010003000003eb000004e50000000b00000004016101620163016403010401",
+  "code": "L1-Y2RgZmBgfs3AwPKUgYGBG4hZGBMZkxiTGVOYGVkYAVUZ3Gg",
+  "codeLength": 50,
+  "deflated": 31,
+  "draws": {
+   "beacon-a": {
+    "randomness": "3a744dccfccb65b588f3fdfd31febabe03a606b28af243104a29252587bee48c",
+    "vector": [
+     2,
+     0,
+     2,
+     3,
+     0,
+     2,
+     0,
+     2,
+     2,
+     2,
+     0
+    ],
+    "hash": "472d70031e0ad5dfc64c4a6ac7d3c8f94baca8a589ce0142dec5bd129bc490bc"
+   },
+   "beacon-b": {
+    "randomness": "9c2e89fa9a1bea481dc1a1b4644eb9749d1cded4fe9b7e6eb3d4a2bb95e92f7e",
+    "vector": [
+     1,
+     0,
+     2,
+     2,
+     2,
+     2,
+     2,
+     3,
+     2,
+     0,
+     2
+    ],
+    "hash": "d126adaa0d93f9f4041195a93375f313887d8f4d531e5602e3327bff1ad4d44b"
+   }
+  }
+ },
+ {
+  "name": "selection-weighted",
+  "kind": "selection",
+  "k": 4,
+  "n": 5,
+  "names": [
+   "w1",
+   "w2",
+   "w3",
+   "w4",
+   "w5"
+  ],
+  "weights": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "replacement": false,
+  "createdRound": 1004,
+  "drawRound": 1254,
+  "raw": "010001000003ec000004e600000004000000050277310277320277330277340277350102030405",
+  "code": "L1-Y2RgZGBgfsPAwPKMAUgAMStTuSFTuRFTuTFTuQlTuSkjEzMLKwBvFZb0",
+  "codeLength": 59,
+  "deflated": 38,
+  "draws": {
+   "beacon-a": {
+    "randomness": "573d04f04eb6f81bfdccbedca3bbb28a3f22a86dcd87fd32c95aa245b918b729",
+    "vector": [
+     4,
+     0,
+     3,
+     2
+    ],
+    "hash": "737c4ec64390b75af5f4f50f63fc5be48519385c7a3b9fad2081230489c9ce3b"
+   },
+   "beacon-b": {
+    "randomness": "1235ea0e6565fe8a01ec88aa8030e3fdb5d6ba871a6729c1b77307e7411d9f71",
+    "vector": [
+     3,
+     4,
+     2,
+     1
+    ],
+    "hash": "4dc6d004a96127f1e2d56fdb29f0fc58d0f543d782aefc4ece18c97b055cdebe"
+   }
+  }
+ },
+ {
+  "name": "selection-zero-weight",
+  "kind": "selection",
+  "k": 2,
+  "n": 3,
+  "names": [
+   "never",
+   "often",
+   "rare"
+  ],
+  "weights": [
+   0,
+   7,
+   1
+  ],
+  "replacement": false,
+  "createdRound": 1005,
+  "drawRound": 1255,
+  "raw": "010001000003ed000004e70000000200000003056e65766572056f6674656e0472617265000701",
+  "code": "L1-Y2RgZGBgfsvAwPKcgYGBCYiZWfNSy1KLWPPTSlLzWIoSi1IZ2BkBDZWuaA",
+  "codeLength": 61,
+  "deflated": 39,
+  "draws": {
+   "beacon-a": {
+    "randomness": "ea1e105231e3f2f641913dbfce9b817e29695c0a902afe9d1a129728bb5ee9a7",
+    "vector": [
+     1,
+     2
+    ],
+    "hash": "67453180528e9e79f5a7b4a6e89039761155f7952e90a111660535659896d20b"
+   },
+   "beacon-b": {
+    "randomness": "9116994e6bac9920692b5d86b22ddce3fc8efc5f82275ee822df724c138aa25b",
+    "vector": [
+     1,
+     2
+    ],
+    "hash": "67453180528e9e79f5a7b4a6e89039761155f7952e90a111660535659896d20b"
+   }
+  }
+ },
+ {
+  "name": "selection-ones",
+  "kind": "selection",
+  "k": 2,
+  "n": 4,
+  "names": [
+   "p",
+   "q",
+   "r",
+   "s"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1006,
+  "drawRound": 1256,
+  "raw": "010000000003ee000004e800000002000000040170017101720173",
+  "code": "L1-Y2QAAuZ3DAwsL4AMJiBmYSxgLGQsYiwGAErwtyM",
+  "codeLength": 42,
+  "deflated": 25,
+  "draws": {
+   "beacon-a": {
+    "randomness": "aca5381379da681c5c358927271c676175b0a7c88c9146bb9dad3c3b8e6cd5f5",
+    "vector": [
+     3,
+     2
+    ],
+    "hash": "f52fec8b7c94fb2f474ded8e475795671533255ee5e24526b1375e93294267b4"
+   },
+   "beacon-b": {
+    "randomness": "161e7864585e34f15f80f68351d18e7a026ec5eaa344544fcaad38187401e5e4",
+    "vector": [
+     2,
+     3
+    ],
+    "hash": "cb420bbf59c514a161bfe4c328928a69e23e19d85a34dce81e5afb4c0cd1fc21"
+   }
+  }
+ },
+ {
+  "name": "ranking-6",
+  "kind": "ranking",
+  "k": 6,
+  "n": 6,
+  "names": [
+   "u1",
+   "u2",
+   "u3",
+   "u4",
+   "u5",
+   "u6"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1007,
+  "drawRound": 1257,
+  "raw": "010100000003ef000004e90000000600000006027531027532027533027534027535027536",
+  "code": "L1-Y2RkYGBgfs_AwPISyGADYaZSQ6ZSI6ZSY6ZSE6ZSU6ZSMwBfY0gP",
+  "codeLength": 55,
+  "deflated": 35,
+  "draws": {
+   "beacon-a": {
+    "randomness": "0b6305fe10b8e64554c567f5c39cf896dc54ad6e51dc760abec0ffb433232004",
+    "vector": [
+     5,
+     0,
+     2,
+     4,
+     3,
+     1
+    ],
+    "hash": "fb635c0be6777ce0bf683ce14ef1e3b20fed1549a5b0fcfbd6c0c78f15b6064c"
+   },
+   "beacon-b": {
+    "randomness": "4eb1a471a748182f91f410af92176370586c230e4e9545e679b57aa084cabc23",
+    "vector": [
+     1,
+     4,
+     0,
+     3,
+     2,
+     5
+    ],
+    "hash": "4364139e0bd561b4f8f1a28ac6ed053d47568d3c6e7dd0fa0f7dbd53fc6ea37f"
+   }
+  }
+ },
+ {
+  "name": "ranking-1",
+  "kind": "ranking",
+  "k": 1,
+  "n": 1,
+  "names": [
+   "solo"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1008,
+  "drawRound": 1258,
+  "raw": "010100000003f0000004ea000000010000000104736f6c6f",
+  "code": "L1-Y2RkYGBg_sDAwPIKyABxGFmK83PyAbiiQyQ",
+  "codeLength": 38,
+  "deflated": 22,
+  "draws": {
+   "beacon-a": {
+    "randomness": "b5acff09b329ef8d07c2609bed6217bb747931224b74cb81c609b59e5820ae78",
+    "vector": [
+     0
+    ],
+    "hash": "05ac854db2694daab9bbe61cebcc9335f7016a22b2a3f5d0d8b74c583f6caeee"
+   },
+   "beacon-b": {
+    "randomness": "6042c0f03aa65d717ac3a7ff38b6e1a26cf8a0dd4d7e77fb1e4a70327dd4f19f",
+    "vector": [
+     0
+    ],
+    "hash": "05ac854db2694daab9bbe61cebcc9335f7016a22b2a3f5d0d8b74c583f6caeee"
+   }
+  }
+ },
+ {
+  "name": "ranking-2",
+  "kind": "ranking",
+  "k": 2,
+  "n": 2,
+  "names": [
+   "first",
+   "second"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1009,
+  "drawRound": 1259,
+  "raw": "010100000003f1000004eb0000000200000002056669727374067365636f6e64",
+  "code": "L1-Y2RkYGBg_sjAwPIayGACYda0zKLiErbi1OT8vBQA3z1oEg",
+  "codeLength": 49,
+  "deflated": 30,
+  "draws": {
+   "beacon-a": {
+    "randomness": "5daf44a48325e19b2ce4e8be8ff752368204be1ad86849a16289db5c20abd819",
+    "vector": [
+     0,
+     1
+    ],
+    "hash": "dfb14f3b30e2f6dfe64b128707b5b36838cf074f573f0555c964b22864dd01d3"
+   },
+   "beacon-b": {
+    "randomness": "495718f443c186d969ef4ad36ba40f2df86b53099dc758e75d98e8c563d013c9",
+    "vector": [
+     0,
+     1
+    ],
+    "hash": "dfb14f3b30e2f6dfe64b128707b5b36838cf074f573f0555c964b22864dd01d3"
+   }
+  }
+ },
+ {
+  "name": "distribution-7-in-3",
+  "kind": "distribution",
+  "k": 3,
+  "n": 7,
+  "names": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e",
+   "f",
+   "g"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1010,
+  "drawRound": 1260,
+  "raw": "010200000003f2000004ec00000003000000070161016201630164016501660167",
+  "code": "L1-Y2RiYGBg_sTAwPIGxABidsZExiTGZMYUxlTGNMZ0ACQMZoc",
+  "codeLength": 50,
+  "deflated": 31,
+  "draws": {
+   "beacon-a": {
+    "randomness": "c9124db3042eb25fc96930e5616245fb269953995dc0c735923a9ac6e5c76a5f",
+    "vector": [
+     3,
+     4,
+     2,
+     6,
+     5,
+     0,
+     1
+    ],
+    "hash": "305bf66c221c01b57e17c40c9eddb8de3a00c3ca5e008840ebacd075f062f124"
+   },
+   "beacon-b": {
+    "randomness": "1ffe1e06298ae0cbdfbcd5e1d7436ace139d1ba4c47f03f563c1e1eb46eb8f5a",
+    "vector": [
+     1,
+     0,
+     6,
+     4,
+     5,
+     2,
+     3
+    ],
+    "hash": "3a83c3ef01bcbe94e410380b16355d651860d449da39dcadd5478368c463f602"
+   }
+  }
+ },
+ {
+  "name": "distribution-6-in-4",
+  "kind": "distribution",
+  "k": 4,
+  "n": 6,
+  "names": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e",
+   "f"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1011,
+  "drawRound": 1261,
+  "raw": "010200000003f3000004ed0000000400000006016101620163016401650166",
+  "code": "L1-Y2RiYGBg_szAwPIWyGABYjbGRMYkxmTGFMZUxjQA-YPn6Q",
+  "codeLength": 49,
+  "deflated": 30,
+  "draws": {
+   "beacon-a": {
+    "randomness": "5088f1fac336f7e773356d62933370be575444f866f5979f5aecb9a3973ccd42",
+    "vector": [
+     3,
+     5,
+     4,
+     1,
+     2,
+     0
+    ],
+    "hash": "741a7b4caaf03c3b3f673700b2f7f0b5752412cd19e0ec4186d788c2f4652e78"
+   },
+   "beacon-b": {
+    "randomness": "fd7380af55f0903a3518686ccfe6503a7eb603e53571302a640fe4faede59f55",
+    "vector": [
+     4,
+     0,
+     2,
+     1,
+     5,
+     3
+    ],
+    "hash": "39152c6c08e213caaa091b13ed783c4405db5d179c17b88d9a71f4a3ef9451d6"
+   }
+  }
+ },
+ {
+  "name": "distribution-weighted",
+  "kind": "distribution",
+  "k": 2,
+  "n": 6,
+  "names": [
+   "w1",
+   "w2",
+   "w3",
+   "w4",
+   "w5",
+   "w6"
+  ],
+  "weights": [
+   5,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "replacement": false,
+  "createdRound": 1012,
+  "drawRound": 1262,
+  "raw": "010201000003f4000004ee0000000200000006027731027732027733027734027735027736050101010101",
+  "code": "L1-Y2RiZGBg_sLAwPKOgYGBCYjZmMoNmcqNmMqNmcpNmMpNmcrNWBlBAABKMI22",
+  "codeLength": 63,
+  "deflated": 41,
+  "draws": {
+   "beacon-a": {
+    "randomness": "1f85e10094424778c809a4b7755933ba99d8613ad62553748e2a22964a67e3ec",
+    "vector": [
+     1,
+     0,
+     4,
+     2,
+     5,
+     3
+    ],
+    "hash": "1344613cd4463e327db2ed55c0d36015806c0ff74211d60fe8f23e4b6c879388"
+   },
+   "beacon-b": {
+    "randomness": "70d01e1fb161d3906a49d8ceddad59187aa23e3cec20a586bfeeb3e76e8e6e68",
+    "vector": [
+     0,
+     1,
+     4,
+     2,
+     3,
+     5
+    ],
+    "hash": "ef1db1e1a16dd41c47d1f3c0c01a09990807c71e0f9dd4ecca12d5e29be8b06f"
+   }
+  }
+ },
+ {
+  "name": "allocation-10-of-1234",
+  "kind": "allocation",
+  "k": 10,
+  "n": 4,
+  "names": [
+   "x1",
+   "x2",
+   "x3",
+   "x4"
+  ],
+  "weights": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "replacement": false,
+  "createdRound": 1013,
+  "drawRound": 1263,
+  "raw": "010301000003f5000004ef0000000a0000000402783102783202783302783401020304",
+  "code": "L1-Y2RmZGBg_srAwPKegYGBC4hZmCoMmSqMmCqMmSpMGJmYWQBoSy1e",
+  "codeLength": 55,
+  "deflated": 35,
+  "draws": {
+   "beacon-a": {
+    "randomness": "5dd2ef5eab36c3ce479fa442b61b680535f5de62599fbcd13697ce2118189f36",
+    "vector": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "hash": "7fe97def57d1c49402f366216157f8ad9d52096eb4c2fc88f1fd17d694879e95"
+   },
+   "beacon-b": {
+    "randomness": "29018a4dff869c13a4449f0f44ed083cb11fc87b326ea7c9add0e59a001761ea",
+    "vector": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "hash": "7fe97def57d1c49402f366216157f8ad9d52096eb4c2fc88f1fd17d694879e95"
+   }
+  }
+ },
+ {
+  "name": "allocation-equal",
+  "kind": "allocation",
+  "k": 7,
+  "n": 3,
+  "names": [
+   "e1",
+   "e2",
+   "e3"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1014,
+  "drawRound": 1264,
+  "raw": "010300000003f6000004f00000000700000003026531026532026533",
+  "code": "L1-Y2RmYGBg_sbAwPIByGAHcZhSDZlSjZhSjQFJhPb_",
+  "codeLength": 43,
+  "deflated": 26,
+  "draws": {
+   "beacon-a": {
+    "randomness": "3f0704b4ddab7bb1b3a475aed39ebd612108ec6c18db195080d8014dffdaac68",
+    "vector": [
+     2,
+     3,
+     2
+    ],
+    "hash": "a7400b06fbdfda4a146f05e5b13c148b4da793b62741cb25fda82009fd000b34"
+   },
+   "beacon-b": {
+    "randomness": "a0ca05e2632f0ec262987cc6a9ca3c109fc9744777227e4e99a488b928a0a0f9",
+    "vector": [
+     2,
+     2,
+     3
+    ],
+    "hash": "6d13f4c71064a427e9f5d70f1446db41280dfc4181de0c70826c50726c60c306"
+   }
+  }
+ },
+ {
+  "name": "allocation-lopsided",
+  "kind": "allocation",
+  "k": 3,
+  "n": 5,
+  "names": [
+   "big",
+   "s1",
+   "s2",
+   "s3",
+   "s4"
+  ],
+  "weights": [
+   10,
+   1,
+   1,
+   1,
+   1
+  ],
+  "replacement": false,
+  "createdRound": 1015,
+  "drawRound": 1265,
+  "raw": "010301000003f7000004f10000000300000005036269670273310273320273330273340a01010101",
+  "code": "L1-Y2RmZGBg_s7AwPKRAcgAYlbmpMx0pmJDpmIjpmJjpmITLkYgAADZEfKR",
+  "codeLength": 59,
+  "deflated": 38,
+  "draws": {
+   "beacon-a": {
+    "randomness": "c7dbe34bd5a7144fc98c688c49dcc7147c17f6dc0750cb718b06dee1b0f268c0",
+    "vector": [
+     2,
+     0,
+     0,
+     0,
+     1
+    ],
+    "hash": "e063c37f7575f3dfe070b336c7d6b20fed2717f22b35a6314656e2d689008215"
+   },
+   "beacon-b": {
+    "randomness": "2a85c9330d6418fdbbe84d201fe2da134a32c04e66e2b9f895d623f977dcaf62",
+    "vector": [
+     2,
+     0,
+     0,
+     1,
+     0
+    ],
+    "hash": "5f29e190e6196ec1b82bc6dc0abf76b4a57c51dd169eb37f27fa33e8b614381b"
+   }
+  }
+ },
+ {
+  "name": "allocation-one-unit",
+  "kind": "allocation",
+  "k": 1,
+  "n": 3,
+  "names": [
+   "a",
+   "b",
+   "c"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1016,
+  "drawRound": 1266,
+  "raw": "010300000003f8000004f20000000100000003016101620163",
+  "code": "L1-Y2RmYGBg_sHAwPIJyGAEcRgTGZMYkwEOGjT6",
+  "codeLength": 39,
+  "deflated": 23,
+  "draws": {
+   "beacon-a": {
+    "randomness": "33c4a8e1ded53dd61a380133bb07e89737fdb42abab9c4b1952eaa45040cca61",
+    "vector": [
+     0,
+     1,
+     0
+    ],
+    "hash": "6d9509762655a1013b56ab2d5927dc42c446a96f46fdd4012a730d0bdf87f0f7"
+   },
+   "beacon-b": {
+    "randomness": "c35e41ae4ea3d76baff973b7bc5a9c35e8f0f8537be026a53703e2f0f2404964",
+    "vector": [
+     0,
+     1,
+     0
+    ],
+    "hash": "6d9509762655a1013b56ab2d5927dc42c446a96f46fdd4012a730d0bdf87f0f7"
+   }
+  }
+ },
+ {
+  "name": "allocation-zero-weights",
+  "kind": "allocation",
+  "k": 5,
+  "n": 3,
+  "names": [
+   "z1",
+   "z2",
+   "z3"
+  ],
+  "weights": [
+   0,
+   5,
+   0
+  ],
+  "replacement": false,
+  "createdRound": 1017,
+  "drawRound": 1267,
+  "raw": "010301000003f9000004f30000000500000003027a31027a32027a33000500",
+  "code": "L1-Y2RmZGBg_snAwPKZgYGBFYiZmaoMmaqMmKqMgVwAUMbuKA",
+  "codeLength": 49,
+  "deflated": 30,
+  "draws": {
+   "beacon-a": {
+    "randomness": "51d26d8e744eb17b179a09505ed5cde6fec3394453d69a9ca220f47099dc2732",
+    "vector": [
+     0,
+     5,
+     0
+    ],
+    "hash": "8f3d3c60ca510530bdb929dc1ae315eb52b1532ec81167e9711380eed8a309c0"
+   },
+   "beacon-b": {
+    "randomness": "2a3794259db195a4b019908e73f694eaaa54d558469627088870ecf6f6e46e1f",
+    "vector": [
+     0,
+     5,
+     0
+    ],
+    "hash": "8f3d3c60ca510530bdb929dc1ae315eb52b1532ec81167e9711380eed8a309c0"
+   }
+  }
+ },
+ {
+  "name": "allocation-exact-share",
+  "kind": "allocation",
+  "k": 4,
+  "n": 4,
+  "names": [
+   "q1",
+   "q2",
+   "q3",
+   "q4"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1018,
+  "drawRound": 1268,
+  "raw": "010300000003fa000004f40000000400000004027131027132027133027134",
+  "code": "L1-Y2RmYGBg_sXAwPIFyGABYaZCQ6ZCI6ZCY6ZCEwDlLzW-",
+  "codeLength": 47,
+  "deflated": 29,
+  "draws": {
+   "beacon-a": {
+    "randomness": "3e60698d6c7a23d947c09ea886d4ec27cefe3027e7d6a483287e9264172e9e04",
+    "vector": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "hash": "463332afba902680b03b50549c57958dc4205de464a285341b1b0acfb4a6500c"
+   },
+   "beacon-b": {
+    "randomness": "b36433b7f0d2094be433263f070b17493e68c0751f6778c51059b1a0ed8f8fa8",
+    "vector": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "hash": "463332afba902680b03b50549c57958dc4205de464a285341b1b0acfb4a6500c"
+   }
+  }
+ },
+ {
+  "name": "unicode-names",
+  "kind": "selection",
+  "k": 2,
+  "n": 5,
+  "names": [
+   "Ævar Ægir",
+   "北京市",
+   "🎲🎲",
+   "مرحبا",
+   "étoile"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1019,
+  "drawRound": 1269,
+  "raw": "010000000003fb000004f500000002000000050bc38676617220c38667697209e58c97e4baace5b88208f09f8eb2f09f8eb20ad985d8b1d8add8a8d8a70865cc81746f696c65",
+  "code": "L1-Y2QAAubfDAwsX4EMJiBm5T7cVpZYpHC4LT2ziPNpz_Qnu9Y83dHE8WF-3yYQ5rrZemPjjbU3VtxYzpF6prEkPzMnFQCDoAyb",
+  "codeLength": 99,
+  "deflated": 68,
+  "draws": {
+   "beacon-a": {
+    "randomness": "22539ce194b1ad178fe57608be7b4c19befdb3a697da836ec19a4355d51fda7f",
+    "vector": [
+     0,
+     1
+    ],
+    "hash": "2c7107dc1fb4bc5e6cd49edd71396921aabc9375ddac95325276b9de11fa9158"
+   },
+   "beacon-b": {
+    "randomness": "fd447a3748be7ad45056cc0877d3936550e0c60a40c2ecbcd4e5697c2627b551",
+    "vector": [
+     2,
+     1
+    ],
+    "hash": "10ab2ff6bd504f99ea06858e5775f90122a7b880bbfda80d2b85711c43692095"
+   }
+  }
+ },
+ {
+  "name": "duplicate-names",
+  "kind": "selection",
+  "k": 2,
+  "n": 3,
+  "names": [
+   "Sam",
+   "Sam",
+   "Sam"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1020,
+  "drawRound": 1270,
+  "raw": "010000000003fc000004f600000002000000030353616d0353616d0353616d",
+  "code": "L1-Y2QAAuY_DAws34AMJhCHOTgxF4YBqq8MfA",
+  "codeLength": 37,
+  "deflated": 21,
+  "draws": {
+   "beacon-a": {
+    "randomness": "5d774a70ca000e0a963c18fa9094f4481edf8d0219625c95c92df1bc33ea2af7",
+    "vector": [
+     0,
+     1
+    ],
+    "hash": "a5ea0d9a5a355fa600b29fa409071714d7c5a2b516fad45df0aa049269cc5360"
+   },
+   "beacon-b": {
+    "randomness": "f8f1cd2ace6308b29534127769b0f1c9cae7b596ed546015b4b11a730a32f80e",
+    "vector": [
+     2,
+     0
+    ],
+    "hash": "4f90b9c731efb4505f23d63f05b8781da0ecc7e0fe946c7a36b8f4e4a02fe9ed"
+   }
+  }
+ },
+ {
+  "name": "long-name",
+  "kind": "ranking",
+  "k": 2,
+  "n": 2,
+  "names": [
+   "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
+   "short"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1021,
+  "drawRound": 1271,
+  "raw": "010100000003fd000004f70000000200000002e8074c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c0573686f7274",
+  "code": "L1-Y2RkYGBg_svAwPIdyGAC4RfsPqNgFIyCYQ9YizPyi0oAxGq66Q",
+  "codeLength": 53,
+  "deflated": 33,
+  "draws": {
+   "beacon-a": {
+    "randomness": "7a0f953bffc8a6c0a30fb59c487f0ddea0ada7de24d641111559291035772900",
+    "vector": [
+     1,
+     0
+    ],
+    "hash": "b34755f264fe8df7cca0a702b64c4925651e0e17a22a99f3622985c41d6f1a0b"
+   },
+   "beacon-b": {
+    "randomness": "6d61de0d37d87f6266bd6901a3461af0ebba1c51d82cbe7e810e5821109613e4",
+    "vector": [
+     1,
+     0
+    ],
+    "hash": "b34755f264fe8df7cca0a702b64c4925651e0e17a22a99f3622985c41d6f1a0b"
+   }
+  }
+ },
+ {
+  "name": "empty-name",
+  "kind": "selection",
+  "k": 1,
+  "n": 2,
+  "names": [
+   "",
+   "b"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1022,
+  "drawRound": 1272,
+  "raw": "010000000003fe000004f80000000100000002000162",
+  "code": "L1-Y2QAAuZ_DAwsP4AMRiBmYmBMAgDqxzrH",
+  "codeLength": 35,
+  "deflated": 20,
+  "draws": {
+   "beacon-a": {
+    "randomness": "c514089b22c406f4706bcecf0b7b6be201083b17fac8d905f78a2a91696cd846",
+    "vector": [
+     0
+    ],
+    "hash": "ba99b0c6a00d443ceed5fe793145cdbdd29751df83382499eba7e10d2c5d7adf"
+   },
+   "beacon-b": {
+    "randomness": "aeb0f69dfa28a01b257b1c3ccac972290df2d26b463eb8294dcc24bb91ea7e38",
+    "vector": [
+     1
+    ],
+    "hash": "150104cc8090667612079c44bd649f0bb4c71e19aeca0b066ece013358bfc0ab"
+   }
+  }
+ },
+ {
+  "name": "max-weight",
+  "kind": "selection",
+  "k": 1,
+  "n": 1,
+  "names": [
+   "max weight"
+  ],
+  "weights": [
+   4294967295
+  ],
+  "replacement": false,
+  "createdRound": 1023,
+  "drawRound": 1273,
+  "raw": "010001000003ff000004f900000001000000010a6d617820776569676874ffffffff0f",
+  "code": "L1-Y2RgZGBg_s_AwPKTgQHEZmDkyk2sUChPzUzPKPkPBPwAIEzHEw",
+  "codeLength": 53,
+  "deflated": 33,
+  "draws": {
+   "beacon-a": {
+    "randomness": "7bbd67a3999f7e057401388e52f7c60e13f4038c4365db347659a30ece27c190",
+    "vector": [
+     0
+    ],
+    "hash": "a43ddfa0eb9063300a6d18157843b62f80f56dd02e7e2ce73ca90f00a4d507d9"
+   },
+   "beacon-b": {
+    "randomness": "6879c62a97d510c7f5e2f92684a468759276191ff254385ff3fae2344dddcee5",
+    "vector": [
+     0
+    ],
+    "hash": "a43ddfa0eb9063300a6d18157843b62f80f56dd02e7e2ce73ca90f00a4d507d9"
+   }
+  }
+ },
+ {
+  "name": "trailing-space-name",
+  "kind": "distribution",
+  "k": 2,
+  "n": 3,
+  "names": [
+   " a",
+   "a ",
+   "a"
+  ],
+  "weights": null,
+  "replacement": false,
+  "createdRound": 1024,
+  "drawRound": 1274,
+  "raw": "01020000000400000004fa00000002000000030220610261200161",
+  "code": "L1-Y2RiYGBgAeFfQALEYWZSSGRKVGBMBABLH_dH",
+  "codeLength": 39,
+  "deflated": 23,
+  "draws": {
+   "beacon-a": {
+    "randomness": "aa53b2a4b902fc7c60fc2ee8de9fc548558c031fb136b68f5f1c33410e600e15",
+    "vector": [
+     2,
+     0,
+     1
+    ],
+    "hash": "78ebc365b8ba1da34754454dc5b02318df36067f592aaa77f28899829ddc7dd3"
+   },
+   "beacon-b": {
+    "randomness": "421774d1229882dac0731fb00696a0878168a68115c34a84b0e0568326c400c3",
+    "vector": [
+     0,
+     2,
+     1
+    ],
+    "hash": "dd03db31b1d8542af4392a1dc0b90cfded2455d6a53a22f5fc54e90ab8f0aa05"
+   }
+  }
+ }
+]

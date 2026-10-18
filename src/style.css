@@ -1,0 +1,106 @@
+:root {
+  --ink: #14171a;
+  --mut: #5c6672;
+  --line: #d6dade;
+  --panel: #f7f8f9;
+  --accent: #1f3a5f;
+  --ok: #1c6b3c;
+  --bad: #9a2b2b;
+  --warn: #8a5a00;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font: 15px/1.55 "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 30px 22px 70px; }
+
+h1 { font: 600 27px/1.2 Georgia, "Times New Roman", serif; letter-spacing: .015em; margin: 0 0 4px; }
+h2 {
+  font: 600 17px/1.3 Georgia, "Times New Roman", serif;
+  margin: 0 0 14px; padding-bottom: 6px; border-bottom: 1px solid var(--line);
+}
+h2 .n {
+  display: inline-block; min-width: 22px; margin-right: 8px; padding: 1px 6px;
+  font: 600 12px/1.5 "Segoe UI", sans-serif; color: #fff; background: var(--accent);
+  border-radius: 2px; text-align: center; vertical-align: 2px;
+}
+h3 { font: 600 14px/1.4 Georgia, serif; margin: 18px 0 6px; }
+p { margin: 8px 0; }
+a { color: var(--accent); }
+section { border-top: 1px solid var(--line); padding: 24px 0 4px; }
+section:first-of-type { border-top: 0; }
+footer { border-top: 1px solid var(--line); margin-top: 26px; padding-top: 24px; }
+
+.tagline { color: var(--mut); margin: 0 0 14px; }
+.hint { color: var(--mut); font-size: 13px; margin: 6px 0 14px; }
+.small { font-size: 12.5px; }
+.mut { color: var(--mut); }
+.ok { color: var(--ok); }
+.bad { color: var(--bad); }
+.warn { color: var(--warn); }
+.err { color: var(--bad); min-height: 0; margin: 10px 0 12px; }
+.err:empty { display: none; }
+.banner {
+  border: 1px solid var(--line); border-left: 3px solid var(--accent);
+  background: var(--panel); padding: 9px 12px; margin: 0 0 14px; font-size: 14px;
+}
+.banner.ok { border-left-color: var(--ok); }
+.banner.bad { border-left-color: var(--bad); }
+.note { font-size: 13.5px; }
+
+label {
+  display: block; margin: 14px 0 5px;
+  font: 600 11px/1.4 "Segoe UI", sans-serif; letter-spacing: .07em; text-transform: uppercase; color: var(--mut);
+}
+label.check { text-transform: none; letter-spacing: 0; font: 14px/1.4 "Segoe UI", sans-serif; color: var(--ink); margin: 10px 0; }
+label.check input { margin-right: 7px; }
+
+input[type="text"], input[type="number"], input[type="datetime-local"], select, textarea {
+  width: 100%; padding: 7px 9px; font: 14px/1.45 inherit; color: var(--ink);
+  background: #fff; border: 1px solid var(--line); border-radius: 2px;
+}
+textarea { resize: vertical; }
+.mono, textarea.mono, input.mono { font-family: Consolas, "SF Mono", Menlo, "Liberation Mono", monospace; font-size: 13px; }
+input[readonly], textarea[readonly] { background: var(--panel); }
+button {
+  font: 14px/1.4 inherit; padding: 7px 14px; margin: 0 6px 6px 0;
+  color: var(--accent); background: #fff; border: 1px solid var(--accent); border-radius: 2px; cursor: pointer;
+}
+button:hover:not(:disabled) { background: #eef2f7; }
+button.primary { color: #fff; background: var(--accent); }
+button.primary:hover:not(:disabled) { background: #17304f; }
+button:disabled { opacity: .45; cursor: not-allowed; }
+nav { margin: 0 0 4px; }
+.grid { display: flex; gap: 14px; flex-wrap: wrap; }
+.grid > div { flex: 1 1 240px; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.row input { flex: 1 1 220px; }
+
+table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 14px; }
+th, td { border-bottom: 1px solid var(--line); padding: 5px 8px; text-align: left; vertical-align: top; }
+th { font: 600 11px/1.4 "Segoe UI", sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--mut); }
+td.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+
+.card { border: 1px solid var(--line); background: var(--panel); padding: 10px 12px; margin: 10px 0; border-radius: 2px; }
+.card table { margin: 0; }
+.members { font-family: Consolas, Menlo, monospace; font-size: 13px; line-height: 1.7; }
+pre.spec {
+  font: 12.5px/1.6 Consolas, "SF Mono", Menlo, monospace; white-space: pre-wrap; word-break: break-word;
+  background: var(--panel); border: 1px solid var(--line); padding: 14px; margin: 0; border-radius: 2px;
+}
+#linkbox { margin: 6px 0 10px; }
+
+@media print {
+  nav, button, .banner { display: none !important; }
+  body { font-size: 12px; }
+  pre.spec { background: #fff; }
+}
+@media (max-width: 560px) {
+  .wrap { padding: 20px 14px 50px; }
+  h1 { font-size: 22px; }
+}

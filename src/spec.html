@@ -1,0 +1,52 @@
+ENGINE   LOTTO/1
+CODE     SHA-256 · deflate-raw (RFC 1951) · base64url (RFC 4648 §5) · u32be · varint = LEB128
+CHAIN    drand quicknet · 52db9ba70e0cc0f6eaf7803dd07447a1f5477735fd3f661792ba94600c84e971
+         period 3 s · genesis 1692803367 · scheme bls-unchained-g1-rfc9380
+         public key 83cf0f2896adee7eb8b5f01fcad3912212c437e0073e911fb90022d3e760183c8c4b450b6a0a6c3ac6a5776a2d1064510d1fec758c921cc22b0e17e63aaf4bcb5ed66304de9cf809bd274ca73bab4af5a6e9c76a4bc09e76eae8991ef5ece45a
+ROUND    round(t) = floor((t − 1692803367) / 3) + 1      time(r) = 1692803367 + 3·(r − 1)
+RULE     drawRound − createdRound ≥ 200        (10 minutes: publish the token before the draw)
+
+TOKEN (version 1 — byte stream, then compressed)
+  01        version = 1
+  02        kind: 0 selection · 1 ranking · 2 distribution · 3 allocation
+  03        flags: bit0 W = weights stored · bit1 R = with replacement
+  04…07     createdRound   (u32be)
+  08…11     drawRound      (u32be)   ← the lottery time, to the second: time(drawRound)
+  12…15     k              (u32be)   selection = winners · ranking = n · distribution = groups · allocation = units
+  16…19     n              (u32be)   participant count
+  then      n × ( varint byte length ‖ UTF-8 name bytes )
+  then      only if W: n × varint weight
+  code      "L1-" ‖ base64url( deflate-raw(bytes) ‖ SHA256(deflate-raw(bytes))[0…3] )
+  The 4-byte checksum covers the compressed bytes, so a deflate stream is not canonical.
+  The canonical commitment is SHA256 of the decompressed bytes = the token hash.
+
+DRAW
+  S      = SHA256("LOTTO/1" ‖ tokenBytes ‖ randomness)
+  B(i)   = SHA256(S ‖ u32be(i)),  i = 0,1,2,…   → 8 big-endian u32 words per block, word j at byte 4j
+  rand(n)  L = 2³² − (2³² mod n); take the next word w; retry while w ≥ L; return w mod n
+  participants stay in their original order; weight(i) = 1 unless weights were stored
+
+  unweighted (no weights stored)
+    permutation  Fisher–Yates: for i = n−1 … 1, swap i with rand(i+1)
+    selection      the first k items of that permutation, in draw order
+    ranking        the whole permutation
+    distribution   the permutation cut into k contiguous blocks whose sizes differ by at
+                   most one, larger blocks first
+
+  weighted (flag W set)
+    pick()  r = rand(Σ weights still in play); walk the cumulative sums in original order;
+            that item wins; remove it, unless R is set
+    selection      pick() k times
+    distribution   pick() n times, then cut into k blocks exactly as above
+
+  allocation (either way; missing weights count as 1)
+    base_i = floor(k · w_i / Σw);  r = k − Σbase_i;  the r participants with the largest
+    (k · w_i mod Σw) each receive one more unit; boundary ties are ordered by rand(2³²) sort
+    keys and then by participant index
+
+LIMITS  100000 participants · k ≤ 1000000 · a name ≤ 4096 bytes · a code ≤ 2 MiB
+        weighted draws: participants ≤ 10000 (groups), participants × winners ≤ 200000000
+        these caps are enforced when a token is read, so a hostile token cannot stall a verifier
+
+RESULT   resultHash = SHA256("LOTTO/1" ‖ kindByte ‖ u32be(drawRound) ‖ vector)
+         vector = the participant indices (or the units per participant) as u32be, in result order

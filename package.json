@@ -1,0 +1,16 @@
+{
+  "name": "lotto",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LOTTO/1 — a verifiable lottery on the drand beacon, shipped as one static HTML file",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test tests/engine.test.mjs tests/dist.test.mjs",
+    "test:live": "node --test tests/live.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "oracle": "python tests/oracle.py",
+    "crosscheck": "node tests/crosscheck.mjs && python tests/oracle_check.py",
+    "all": "npm run oracle && npm run test && npm run crosscheck && npm run build && npm run test",
+    "full": "npm run all && npm run test:live && npm run test:browser"
+  }
+}

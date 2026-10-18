@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LOTTO/1 — verifiable lottery</title>
+<meta name="description" content="A fair, auditable lottery that draws its randomness from the drand beacon. One static page, no server.">
+<style><!--{{STYLE}}--></style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>LOTTO/1</h1>
+  <p class="tagline">A verifiable lottery. Selection, ranking, groups and proportional allocation, drawn from the
+    <a href="https://drand.love/developer/" target="_blank" rel="noopener">drand</a> <b>quicknet</b> beacon.
+    Everything runs in this page — there is no server and nothing to trust but SHA-256.</p>
+  <p id="banner" class="banner" hidden></p>
+  <nav>
+    <button id="navCreate" type="button">Create a lottery</button>
+    <button id="navOpen" type="button">Open / verify a code</button>
+  </nav>
+</header>
+
+<section id="secCreate">
+  <h2><span class="n">1</span> Lottery</h2>
+  <div class="grid">
+    <div>
+      <label for="kind">Kind</label>
+      <select id="kind">
+        <option value="selection">Selection — pick K winners</option>
+        <option value="ranking">Ranking — order everybody</option>
+        <option value="distribution">Distribution — split into G groups</option>
+        <option value="allocation">Proportional allocation — share out P units</option>
+      </select>
+    </div>
+    <div id="krow">
+      <label for="k" id="klabel">Winners</label>
+      <input id="k" type="number" min="1" step="1" value="3">
+    </div>
+  </div>
+  <p class="hint" id="khint"></p>
+  <div id="replrow">
+    <label class="check"><input type="checkbox" id="repl"> With replacement — the same participant may win more than once</label>
+  </div>
+
+  <label for="when">Draw time (in your own timezone)</label>
+  <div class="row">
+    <input id="when" type="datetime-local">
+    <button type="button" data-add="600">+10 min</button>
+    <button type="button" data-add="1800">+30 min</button>
+    <button type="button" data-add="3600">+1 h</button>
+    <button type="button" data-add="86400">+1 day</button>
+  </div>
+  <p class="hint" id="wheninfo"></p>
+
+  <label for="names">Participants — one per line</label>
+  <textarea id="names" rows="7" spellcheck="false" placeholder="Ada Lovelace&#10;Grace Hopper&#10;Alan Turing"></textarea>
+
+  <label for="weights">Weights (optional) — whole numbers, one per line, same order</label>
+  <textarea id="weights" rows="3" spellcheck="false" placeholder="leave empty for equal chances"></textarea>
+  <p class="hint">A participant's chance is their weight divided by the total weight. A weight of 0 means they cannot be drawn.</p>
+
+  <p class="err" id="cerr"></p>
+  <button id="make" class="primary" type="button">Compile the token</button>
+</section>
+
+<section id="secToken" hidden>
+  <h2><span class="n">2</span> Token</h2>
+  <textarea id="code" class="mono" rows="4" readonly spellcheck="false"></textarea>
+  <div class="row">
+    <button id="copy" type="button">Copy code</button>
+    <button id="link" type="button">Get link for participants</button>
+  </div>
+  <input id="linkbox" class="mono" type="text" readonly hidden>
+  <p class="hint" id="size"></p>
+  <p class="note" id="rule"></p>
+</section>
+
+<section id="secRun" hidden>
+  <h2><span class="n">3</span> Verifiable draw</h2>
+  <div id="facts"></div>
+  <p class="hint" id="countdown"></p>
+  <button id="drawbtn" class="primary" type="button">Draw from drand</button>
+  <div id="relays"></div>
+  <div id="result"></div>
+  <div id="proofbtns" hidden>
+    <button id="proofcopy" type="button">Copy proof</button>
+    <button id="proofdl" type="button">Download proof</button>
+  </div>
+</section>
+
+<section id="secVerify" hidden>
+  <h2><span class="n">4</span> Verify</h2>
+  <p class="hint">Paste a code, or a proof file. The beacon is fetched live from three drand relays; you can also paste
+    one in the second box to check everything completely offline.</p>
+  <label for="vcode">Code or proof</label>
+  <textarea id="vcode" class="mono" rows="3" spellcheck="false"></textarea>
+  <label for="vbeacon">Beacon — optional JSON with round, randomness, signature</label>
+  <textarea id="vbeacon" class="mono" rows="3" spellcheck="false"></textarea>
+  <p class="err" id="verr"></p>
+  <button id="verifybtn" class="primary" type="button">Verify</button>
+  <div id="vout"></div>
+</section>
+
+<footer>
+  <h2><span class="n">§</span> Frozen specification</h2>
+  <p class="hint">This is the whole contract. Any other implementation of it will produce byte-identical results.</p>
+  <pre class="spec"><!--{{SPEC}}--></pre>
+</footer>
+
+</div>
+<script><!--{{ENGINE}}-->
+<!--{{APP}}--></script>
+</body>
+</html>
